@@ -36,7 +36,7 @@ void* rolling_func(int threadId) {
     while ((numbers1 < 177) && (rolls < maxRollsThread)) {
         numbers1 = 0;
         for (unsigned int i=1;i<=231;i++) { // 231 rolls
-            if (rand() < (RAND_MAX+1u) / 4) { //Uses only the last 2 bits to get a number between 0 and 3
+            if (rand() < (RAND_MAX+1u) / 4) { // Has a 1 in 4 chance of being true
                 numbers1++;
             }
         }
